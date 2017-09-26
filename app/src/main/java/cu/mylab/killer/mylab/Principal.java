@@ -1,5 +1,6 @@
 package cu.mylab.killer.mylab;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -40,6 +41,9 @@ public class Principal extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Intent iniciarServicioCall = new Intent(this,CallDetectService.class);
+        startService(iniciarServicioCall);
     }
 
     @Override
