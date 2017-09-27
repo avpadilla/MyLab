@@ -12,43 +12,55 @@
     tools:context="cu.mylab.killer.mylab.Principal"
     tools:showIn="@layout/app_bar_principal">
 
-    <TextView
-        android:id="@+id/titulo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-
     <android.support.v7.widget.CardView
         android:id="@+id/card1"
         android:layout_width="match_parent"
-        android:background="@color/colorAccent"
-        android:layout_height="150dp"
-        android:layout_below="@+id/titulo">
+        android:layout_height="200dp" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fondo_card1"
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/txt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="30dp"
-            android:paddingLeft="100dp"
-            android:text="Título Card" />
+            android:padding="10dp"
+            android:text="@string/Text_cardView"
+            android:layout_gravity="bottom"
+            android:background="#8c000000"
+            android:textColor="#ffe3e3e3"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:id="@+id/card2"
         android:layout_width="match_parent"
-        android:background="@color/colorAccent"
-        android:layout_height="150dp"
-        android:layout_below="@+id/card1">
+        android:layout_height="200dp"
+        android:layout_below="@+id/card1"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/fondo_card2"
+            android:scaleType="centerCrop"/>
 
         <TextView
             android:id="@+id/txt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="30dp"
-            android:paddingLeft="100dp"
-            android:text="Título Card" />
+            android:padding="10dp"
+            android:text="@string/Text_cardView"
+            android:layout_gravity="bottom"
+            android:background="#8c000000"
+            android:textColor="#ffe3e3e3"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
 
     </android.support.v7.widget.CardView>
 
